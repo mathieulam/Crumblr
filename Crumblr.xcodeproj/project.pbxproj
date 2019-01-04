@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24A7E6DAB45F6CE4CF3A30D2 /* Pods_CrumblrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55849839E8FF7779FCB341E7 /* Pods_CrumblrTests.framework */; };
+		4E02F6F184A15019CED67B89 /* Pods_Crumblr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C49AC07763AF24AB271BE8 /* Pods_Crumblr.framework */; };
+		4E32B5D221DE355600649F3A /* ImageViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32B5D121DE355600649F3A /* ImageViewTableViewCell.swift */; };
+		4E356BC021DEC27E00897204 /* PhotoCommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E356BBF21DEC27E00897204 /* PhotoCommentViewModel.swift */; };
+		4E80C34121D112FC00E3333A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C34021D112FC00E3333A /* AppDelegate.swift */; };
+		4E80C34321D112FC00E3333A /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C34221D112FC00E3333A /* PhotosCollectionViewController.swift */; };
+		4E80C34921D112FC00E3333A /* Crumblr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C34721D112FC00E3333A /* Crumblr.xcdatamodeld */; };
+		4E80C34B21D112FF00E3333A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E80C34A21D112FF00E3333A /* Assets.xcassets */; };
+		4E80C34E21D112FF00E3333A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E80C34C21D112FF00E3333A /* LaunchScreen.storyboard */; };
+		4E80C35921D112FF00E3333A /* CrumblrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C35821D112FF00E3333A /* CrumblrTests.swift */; };
+		4E80C36621D417C700E3333A /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C36521D417C700E3333A /* PhotoModel.swift */; };
+		4E80C36B21D419C900E3333A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C36A21D419C900E3333A /* ApiManager.swift */; };
+		4E80C36D21D41B3900E3333A /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C36C21D41B3900E3333A /* CommentModel.swift */; };
+		4E80C37121D41E8200E3333A /* CrumblrApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C37021D41E8200E3333A /* CrumblrApiService.swift */; };
+		4E80C37521D41F0400E3333A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C37421D41F0400E3333A /* Constants.swift */; };
+		4E80C37A21DA37DA00E3333A /* PhotoThumbnailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C37921DA37DA00E3333A /* PhotoThumbnailViewModel.swift */; };
+		4E80C37E21DCD0C000E3333A /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C37D21DCD0C000E3333A /* PhotosCollectionViewCell.swift */; };
+		4E80C38121DD217300E3333A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C38021DD217300E3333A /* DetailsViewController.swift */; };
+		4E80C38421DD358700E3333A /* DetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C38321DD358700E3333A /* DetailsCollectionViewCell.swift */; };
+		4E80C38621DD3D5400E3333A /* PhotoTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C38521DD3D5400E3333A /* PhotoTitleTableViewCell.swift */; };
+		4E80C38821DD3D6600E3333A /* PhotoCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C38721DD3D6600E3333A /* PhotoCommentTableViewCell.swift */; };
+		4EC4434E21DEDC06006D48DB /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4434D21DEDC06006D48DB /* Reachability.swift */; };
+		4EC4435021DEDE41006D48DB /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4434F21DEDE41006D48DB /* UIView+extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E80C35521D112FF00E3333A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E80C33521D112FC00E3333A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E80C33C21D112FC00E3333A;
+			remoteInfo = Crumblr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09C49AC07763AF24AB271BE8 /* Pods_Crumblr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crumblr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3605DBFE96F46096FDD837C8 /* Pods-Crumblr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crumblr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crumblr/Pods-Crumblr.debug.xcconfig"; sourceTree = "<group>"; };
+		4E32B5D121DE355600649F3A /* ImageViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewTableViewCell.swift; sourceTree = "<group>"; };
+		4E356BBF21DEC27E00897204 /* PhotoCommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCommentViewModel.swift; sourceTree = "<group>"; };
+		4E80C33D21D112FC00E3333A /* Crumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E80C34021D112FC00E3333A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E80C34221D112FC00E3333A /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		4E80C34821D112FC00E3333A /* Crumblr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Crumblr.xcdatamodel; sourceTree = "<group>"; };
+		4E80C34A21D112FF00E3333A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E80C34D21D112FF00E3333A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E80C34F21D112FF00E3333A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E80C35421D112FF00E3333A /* CrumblrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrumblrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E80C35821D112FF00E3333A /* CrumblrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrumblrTests.swift; sourceTree = "<group>"; };
+		4E80C35A21D112FF00E3333A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E80C36521D417C700E3333A /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		4E80C36A21D419C900E3333A /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		4E80C36C21D41B3900E3333A /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		4E80C37021D41E8200E3333A /* CrumblrApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrumblrApiService.swift; sourceTree = "<group>"; };
+		4E80C37421D41F0400E3333A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4E80C37921DA37DA00E3333A /* PhotoThumbnailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoThumbnailViewModel.swift; sourceTree = "<group>"; };
+		4E80C37D21DCD0C000E3333A /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		4E80C38021DD217300E3333A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		4E80C38321DD358700E3333A /* DetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		4E80C38521DD3D5400E3333A /* PhotoTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTitleTableViewCell.swift; sourceTree = "<group>"; };
+		4E80C38721DD3D6600E3333A /* PhotoCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCommentTableViewCell.swift; sourceTree = "<group>"; };
+		4EC4434D21DEDC06006D48DB /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4EC4434F21DEDE41006D48DB /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		55849839E8FF7779FCB341E7 /* Pods_CrumblrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrumblrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65AA7A5D07802EF0C7CA08DD /* Pods-Crumblr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crumblr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crumblr/Pods-Crumblr.release.xcconfig"; sourceTree = "<group>"; };
+		8DB721427152B24AAF1210F7 /* Pods-CrumblrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrumblrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrumblrTests/Pods-CrumblrTests.release.xcconfig"; sourceTree = "<group>"; };
+		CAF46449332C615E85114886 /* Pods-CrumblrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrumblrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrumblrTests/Pods-CrumblrTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E80C33A21D112FC00E3333A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E02F6F184A15019CED67B89 /* Pods_Crumblr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E80C35121D112FF00E3333A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A7E6DAB45F6CE4CF3A30D2 /* Pods_CrumblrTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F4E09FDB618436F61B700B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3605DBFE96F46096FDD837C8 /* Pods-Crumblr.debug.xcconfig */,
+				65AA7A5D07802EF0C7CA08DD /* Pods-Crumblr.release.xcconfig */,
+				CAF46449332C615E85114886 /* Pods-CrumblrTests.debug.xcconfig */,
+				8DB721427152B24AAF1210F7 /* Pods-CrumblrTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4E80C33421D112FC00E3333A = {
+			isa = PBXGroup;
+			children = (
+				4E80C33F21D112FC00E3333A /* Crumblr */,
+				4E80C35721D112FF00E3333A /* CrumblrTests */,
+				4E80C33E21D112FC00E3333A /* Products */,
+				1F4E09FDB618436F61B700B8 /* Pods */,
+				EAEAC26DA2E3D2FB9A5544B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4E80C33E21D112FC00E3333A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E80C33D21D112FC00E3333A /* Crumblr.app */,
+				4E80C35421D112FF00E3333A /* CrumblrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E80C33F21D112FC00E3333A /* Crumblr */ = {
+			isa = PBXGroup;
+			children = (
+				4E80C37221D41EEF00E3333A /* Utils */,
+				4E80C36921D419B900E3333A /* Service */,
+				4E80C36421D4167600E3333A /* ViewModel */,
+				4E80C36321D4165200E3333A /* Model */,
+				4E80C37821DA367900E3333A /* View */,
+				4E80C34021D112FC00E3333A /* AppDelegate.swift */,
+				4E80C34A21D112FF00E3333A /* Assets.xcassets */,
+				4E80C34F21D112FF00E3333A /* Info.plist */,
+				4E80C34721D112FC00E3333A /* Crumblr.xcdatamodeld */,
+			);
+			path = Crumblr;
+			sourceTree = "<group>";
+		};
+		4E80C35721D112FF00E3333A /* CrumblrTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E80C35821D112FF00E3333A /* CrumblrTests.swift */,
+				4E80C35A21D112FF00E3333A /* Info.plist */,
+			);
+			path = CrumblrTests;
+			sourceTree = "<group>";
+		};
+		4E80C36321D4165200E3333A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E80C36521D417C700E3333A /* PhotoModel.swift */,
+				4E80C36C21D41B3900E3333A /* CommentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E80C36421D4167600E3333A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E80C37921DA37DA00E3333A /* PhotoThumbnailViewModel.swift */,
+				4E356BBF21DEC27E00897204 /* PhotoCommentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E80C36921D419B900E3333A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4E80C36A21D419C900E3333A /* ApiManager.swift */,
+				4E80C37021D41E8200E3333A /* CrumblrApiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4E80C37221D41EEF00E3333A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4E80C37421D41F0400E3333A /* Constants.swift */,
+				4EC4434D21DEDC06006D48DB /* Reachability.swift */,
+				4EC4434F21DEDE41006D48DB /* UIView+extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4E80C37821DA367900E3333A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E80C34C21D112FF00E3333A /* LaunchScreen.storyboard */,
+				4E80C37B21DCD08700E3333A /* Main View */,
+				4E80C37F21DD10CF00E3333A /* Detail View */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E80C37B21DCD08700E3333A /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				4E80C34221D112FC00E3333A /* PhotosCollectionViewController.swift */,
+				4E80C37C21DCD09F00E3333A /* Cell */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		4E80C37C21DCD09F00E3333A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4E80C37D21DCD0C000E3333A /* PhotosCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4E80C37F21DD10CF00E3333A /* Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				4E80C38021DD217300E3333A /* DetailsViewController.swift */,
+				4E80C38221DD356500E3333A /* Cell */,
+			);
+			path = "Detail View";
+			sourceTree = "<group>";
+		};
+		4E80C38221DD356500E3333A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4E80C38321DD358700E3333A /* DetailsCollectionViewCell.swift */,
+				4E80C38521DD3D5400E3333A /* PhotoTitleTableViewCell.swift */,
+				4E80C38721DD3D6600E3333A /* PhotoCommentTableViewCell.swift */,
+				4E32B5D121DE355600649F3A /* ImageViewTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EAEAC26DA2E3D2FB9A5544B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09C49AC07763AF24AB271BE8 /* Pods_Crumblr.framework */,
+				55849839E8FF7779FCB341E7 /* Pods_CrumblrTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E80C33C21D112FC00E3333A /* Crumblr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E80C35D21D112FF00E3333A /* Build configuration list for PBXNativeTarget "Crumblr" */;
+			buildPhases = (
+				D4BBBFB68D52672BD87ED56B /* [CP] Check Pods Manifest.lock */,
+				4E80C33921D112FC00E3333A /* Sources */,
+				4E80C33A21D112FC00E3333A /* Frameworks */,
+				4E80C33B21D112FC00E3333A /* Resources */,
+				1D87F71353B38569A5E6A5C7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crumblr;
+			productName = Crumblr;
+			productReference = 4E80C33D21D112FC00E3333A /* Crumblr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E80C35321D112FF00E3333A /* CrumblrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E80C36021D112FF00E3333A /* Build configuration list for PBXNativeTarget "CrumblrTests" */;
+			buildPhases = (
+				31EF40D51B2BEBF42E056EF8 /* [CP] Check Pods Manifest.lock */,
+				4E80C35021D112FF00E3333A /* Sources */,
+				4E80C35121D112FF00E3333A /* Frameworks */,
+				4E80C35221D112FF00E3333A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E80C35621D112FF00E3333A /* PBXTargetDependency */,
+			);
+			name = CrumblrTests;
+			productName = CrumblrTests;
+			productReference = 4E80C35421D112FF00E3333A /* CrumblrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E80C33521D112FC00E3333A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Mathieu Lamvohee";
+				TargetAttributes = {
+					4E80C33C21D112FC00E3333A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4E80C35321D112FF00E3333A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4E80C33C21D112FC00E3333A;
+					};
+				};
+			};
+			buildConfigurationList = 4E80C33821D112FC00E3333A /* Build configuration list for PBXProject "Crumblr" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E80C33421D112FC00E3333A;
+			productRefGroup = 4E80C33E21D112FC00E3333A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E80C33C21D112FC00E3333A /* Crumblr */,
+				4E80C35321D112FF00E3333A /* CrumblrTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E80C33B21D112FC00E3333A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E80C34E21D112FF00E3333A /* LaunchScreen.storyboard in Resources */,
+				4E80C34B21D112FF00E3333A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E80C35221D112FF00E3333A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D87F71353B38569A5E6A5C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Crumblr/Pods-Crumblr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crumblr/Pods-Crumblr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31EF40D51B2BEBF42E056EF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrumblrTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4BBBFB68D52672BD87ED56B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crumblr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E80C33921D112FC00E3333A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E80C38621DD3D5400E3333A /* PhotoTitleTableViewCell.swift in Sources */,
+				4E80C34321D112FC00E3333A /* PhotosCollectionViewController.swift in Sources */,
+				4E80C34121D112FC00E3333A /* AppDelegate.swift in Sources */,
+				4E80C36621D417C700E3333A /* PhotoModel.swift in Sources */,
+				4E80C38121DD217300E3333A /* DetailsViewController.swift in Sources */,
+				4E80C37A21DA37DA00E3333A /* PhotoThumbnailViewModel.swift in Sources */,
+				4EC4434E21DEDC06006D48DB /* Reachability.swift in Sources */,
+				4E80C34921D112FC00E3333A /* Crumblr.xcdatamodeld in Sources */,
+				4E80C37E21DCD0C000E3333A /* PhotosCollectionViewCell.swift in Sources */,
+				4E80C37121D41E8200E3333A /* CrumblrApiService.swift in Sources */,
+				4E80C36D21D41B3900E3333A /* CommentModel.swift in Sources */,
+				4E80C38821DD3D6600E3333A /* PhotoCommentTableViewCell.swift in Sources */,
+				4EC4435021DEDE41006D48DB /* UIView+extension.swift in Sources */,
+				4E80C36B21D419C900E3333A /* ApiManager.swift in Sources */,
+				4E80C37521D41F0400E3333A /* Constants.swift in Sources */,
+				4E32B5D221DE355600649F3A /* ImageViewTableViewCell.swift in Sources */,
+				4E80C38421DD358700E3333A /* DetailsCollectionViewCell.swift in Sources */,
+				4E356BC021DEC27E00897204 /* PhotoCommentViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E80C35021D112FF00E3333A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E80C35921D112FF00E3333A /* CrumblrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E80C35621D112FF00E3333A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E80C33C21D112FC00E3333A /* Crumblr */;
+			targetProxy = 4E80C35521D112FF00E3333A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E80C34C21D112FF00E3333A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E80C34D21D112FF00E3333A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E80C35B21D112FF00E3333A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E80C35C21D112FF00E3333A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E80C35E21D112FF00E3333A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3605DBFE96F46096FDD837C8 /* Pods-Crumblr.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85UW6KZ74E;
+				INFOPLIST_FILE = Crumblr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlamvohee.Crumblr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E80C35F21D112FF00E3333A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65AA7A5D07802EF0C7CA08DD /* Pods-Crumblr.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85UW6KZ74E;
+				INFOPLIST_FILE = Crumblr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlamvohee.Crumblr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4E80C36121D112FF00E3333A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAF46449332C615E85114886 /* Pods-CrumblrTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85UW6KZ74E;
+				INFOPLIST_FILE = CrumblrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlamvohee.CrumblrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crumblr.app/Crumblr";
+			};
+			name = Debug;
+		};
+		4E80C36221D112FF00E3333A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DB721427152B24AAF1210F7 /* Pods-CrumblrTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85UW6KZ74E;
+				INFOPLIST_FILE = CrumblrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlamvohee.CrumblrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crumblr.app/Crumblr";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E80C33821D112FC00E3333A /* Build configuration list for PBXProject "Crumblr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E80C35B21D112FF00E3333A /* Debug */,
+				4E80C35C21D112FF00E3333A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E80C35D21D112FF00E3333A /* Build configuration list for PBXNativeTarget "Crumblr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E80C35E21D112FF00E3333A /* Debug */,
+				4E80C35F21D112FF00E3333A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E80C36021D112FF00E3333A /* Build configuration list for PBXNativeTarget "CrumblrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E80C36121D112FF00E3333A /* Debug */,
+				4E80C36221D112FF00E3333A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4E80C34721D112FC00E3333A /* Crumblr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4E80C34821D112FC00E3333A /* Crumblr.xcdatamodel */,
+			);
+			currentVersion = 4E80C34821D112FC00E3333A /* Crumblr.xcdatamodel */;
+			path = Crumblr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4E80C33521D112FC00E3333A /* Project object */;
+}
